@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:liveuserlocation/pages/map_page.dart';
 
 void main(){
   runApp(const MyApp());
@@ -10,11 +11,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('hello world'),
-        ),
-      ),
+      title: 'Flutter Users Live Location',
+      home:MapPage(),
     );
   }
 }
